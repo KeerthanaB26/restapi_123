@@ -1,4 +1,5 @@
-from flask import Flask, jsonify,render_template
+from flask import Flask, jsonify, render_template
+
 
 todo = Flask(__name__)
 
@@ -11,10 +12,10 @@ students = [
     {
         'id':2,
         'name':'yashaswini',
-        'age':16
+        'age':20
+
     }
 ]
-
 @todo.route('/students-list')
 def get_students_list():
     return jsonify(students)
